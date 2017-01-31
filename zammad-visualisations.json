@@ -1,49 +1,5 @@
 [
   {
-    "_id": "Zammad",
-    "_type": "dashboard",
-    "_source": {
-      "title": "Zammad",
-      "hits": 0,
-      "description": "",
-      "panelsJSON": "[{\"col\":1,\"id\":\"Zammad-Tickets\",\"panelIndex\":1,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Zammad-State\",\"panelIndex\":2,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"Zammad-Groups-Bars\",\"panelIndex\":8,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Zammad-Customers-Bars\",\"panelIndex\":10,\"row\":9,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Zammad-Sender\",\"panelIndex\":11,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"Zammad-Articles-by-day\",\"panelIndex\":12,\"row\":3,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Zammad-Articles-by-day-by-User\",\"panelIndex\":13,\"row\":3,\"size_x\":6,\"size_y\":2,\"type\":\"visualization\"},{\"col\":7,\"id\":\"Zammad-Average-firts-response-in-min\",\"panelIndex\":14,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"Zammad-Average-update-time-in-min\",\"panelIndex\":15,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":4,\"id\":\"Zammad-Type\",\"panelIndex\":16,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":10,\"id\":\"Zammad-Delivery-Status\",\"panelIndex\":17,\"row\":5,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"article.created_at\"],\"id\":\"Zammad\",\"panelIndex\":18,\"row\":11,\"size_x\":12,\"size_y\":6,\"sort\":[\"article.created_at\",\"desc\"],\"type\":\"search\"},{\"id\":\"Zammad-Organization\",\"type\":\"visualization\",\"panelIndex\":19,\"size_x\":3,\"size_y\":2,\"col\":1,\"row\":7},{\"id\":\"Zammad-Department\",\"type\":\"visualization\",\"panelIndex\":20,\"size_x\":3,\"size_y\":2,\"col\":4,\"row\":7}]",
-      "optionsJSON": "{\"darkTheme\":false}",
-      "uiStateJSON": "{\"P-2\":{\"vis\":{\"legendOpen\":true}}}",
-      "version": 1,
-      "timeRestore": true,
-      "timeTo": "now",
-      "timeFrom": "now-90d",
-      "refreshInterval": {
-        "display": "Off",
-        "pause": false,
-        "value": 0
-      },
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
-      }
-    }
-  },
-  {
-    "_id": "Zammad",
-    "_type": "search",
-    "_source": {
-      "title": "Zammad",
-      "description": "",
-      "hits": 0,
-      "columns": [
-        "article.created_at"
-      ],
-      "sort": [
-        "article.created_at",
-        "desc"
-      ],
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"zammad_production*\",\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647},\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}"
-      }
-    }
-  },
-  {
     "_id": "Zammad-Tickets",
     "_type": "visualization",
     "_source": {
